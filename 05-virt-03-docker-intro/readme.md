@@ -14,6 +14,7 @@ https://hub.docker.com/repository/docker/d051a/custom-nginx/general
 
 ЛИСТИНГ:
 
+```
  lesson_03 docker run -d -p 8080:80 --name custom-nginx-t2 nginx_custom
 318f7d0bea2c92ee30f8064d9eaa771faa5a88c9770184df51d834c4b57a459a
 ➜  lesson_03 docker attach custom-nginx-t2
@@ -119,7 +120,7 @@ fd79570bd4982f6e304b594c0aa8d758e199241d00f7d992339eafa5d11832ea
 
 custom-nginx-t2
 ➜  lesson_03 docker rm --force custom-nginx-t2-new
-
+```
 
 
 #### Задание 4
@@ -127,6 +128,7 @@ custom-nginx-t2
 
 ЛИСТИНГ:
 
+```
 lesson_03 docker run -d --name centos-container -v $(pwd):/data centos:latest sleep infinity
 
 Unable to find image 'centos:latest' locally
@@ -161,7 +163,7 @@ cat /data/host_file.txt
 Hello from CentOS
 Hello from Host
 root@c25f284cae52:/#
-
+```
 
 #### Задание 5
 5.png
